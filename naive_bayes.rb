@@ -48,9 +48,9 @@ end
 class Sample < Struct.new(:height, :weight, :foot_size); end
 
 males = []
-males << Sample.new(6, 180, 12) << Sample.new(5.92, 190, 11) << Sample.new(5.58, 170, 12) << Sample.new(5.92, 165, 10)
-
 females = []
+
+males << Sample.new(6, 180, 12) << Sample.new(5.92, 190, 11) << Sample.new(5.58, 170, 12) << Sample.new(5.92, 165, 10)
 females << Sample.new(5, 100, 6) << Sample.new(5.5, 150, 8) << Sample.new(5.42, 130, 7) << Sample.new(5.75, 150, 9)
 
 unknown = Sample.new(6, 130, 8)
