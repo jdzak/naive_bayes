@@ -55,10 +55,10 @@ females << Sample.new(5, 100, 6) << Sample.new(5.5, 150, 8) << Sample.new(5.42, 
 
 unknown = Sample.new(6, 130, 8)
 
-male_probabilities_product = total_probability(unknown, males)
-female_probabilities_product = total_probability(unknown, females)
+probability_male = total_probability(unknown, males)
+probability_female = total_probability(unknown, females)
 
-puts "male_probabilities_product: #{male_probabilities_product}"  
-puts "female_probabilities_product: #{female_probabilities_product}"  
+puts "probability_male: #{probability_male}"  
+puts "probability_female: #{probability_female}"  
 
-puts male_probabilities_product > female_probabilities_product ? "This person is likely male" : "This person is likely female" 
+puts probability_male > probability_female ? "This person is likely male" : "This person is likely female" 
